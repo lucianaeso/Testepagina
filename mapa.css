@@ -1,0 +1,167 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Georgia, serif;
+  background-color: #eef2f3;
+  color: #222;
+}
+
+/* Cabeçalho em estilo horizontal */
+header {
+  background-color: #2b2d42;
+  color: white;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Avatar */
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #8d99ae;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+/* Menu */
+nav {
+  background-color: #edf2f4;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Links */
+nav a {
+  color: #2b2d42;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 14px;
+}
+
+/* Área principal */
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+/* Seções */
+section, aside {
+  background-color: white;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+/* Títulos */
+h2 {
+  color: #2b2d42;
+  margin-bottom: 15px;
+}
+
+/* Lista */
+ul {
+  padding-left: 25px;
+}
+
+
+/* Cards dos projetos */
+
+
+/*INICIO DAS ALTERAÇÕES*/
+
+/* Container dos cards de projetos */
+.cards {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Card individual de cada projeto */
+.cards article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #edf2f4;
+  border-radius: 15px;
+}
+
+/* Área exclusiva da imagem */
+.imagem-projeto {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfe7ea;
+}
+
+/* Imagem dentro do projeto */
+.imagem-projeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Área do texto abaixo da imagem */
+.conteudo-projeto {
+  padding: 18px;
+}
+
+/* 16 - Subtítulo do projeto */
+.conteudo-projeto h3 {
+  margin-bottom: 10px;
+  color: #2b2d42;
+}
+
+/* Parágrafo do projeto */
+.conteudo-projeto p {
+  line-height: 1.5;
+}
+
+
+
+/*FIM DAS ALTERAÇÕES*/
+
+
+
+/* Rodapé */
+footer {
+  background-color: #2b2d42;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
